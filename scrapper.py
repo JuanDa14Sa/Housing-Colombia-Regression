@@ -35,7 +35,8 @@ for href in hrefs[0:1]:
     # element = driver.find_element(By.XPATH, '//*[@id="gatsby-focus-wrapper"]/div/main/section/article/section/div/ul/li[2]/div/div[2]/div/div/div/div/section/article/ul/li[1]/ul')
     # print(element.text)
     property_soup = BeautifulSoup(driver.page_source, 'html.parser')
-    print(property_soup.find('ul', class_='details-container'))
+    print(property_soup.find_all('div', class_='detail-item'))
+    
     
     
     
